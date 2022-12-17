@@ -20,26 +20,31 @@ public class JHW2_4 {
     char ch = iScanner.next().charAt(0);
     System.out.print("Задайте второе число: ");
     Integer number2 = iScanner.nextInt();
-    logger.addHandler(fh.toString());
+    logger.addHandler(fh);
+
 
     switch (ch) {
         case '+':
             int sum = number1 + number2;
             System.out.printf("Сумма: %d", sum);
+            logger.log(Level.INFO, "Сумма");
             break;
         case '-':
             int sub = number1 - number2;
             System.out.printf("Разность: %d", sub);
+            logger.log(Level.INFO, "Разность");
             break;
         case '/':
             double num1 = number1;
             double num2 = number2;
             double div = num1/num2;
             System.out.printf("Деление: %f", div);
+            logger.log(Level.INFO, "Деление");
             break;
         case '*':
             int mult = number1 * number2;
             System.out.printf("Произведение: %d", mult);
+            logger.log(Level.INFO, "Умножение");
             break;
     }
     iScanner.close();
