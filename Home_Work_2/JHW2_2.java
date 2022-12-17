@@ -9,15 +9,18 @@ import java.util.stream.Collectors;
 //import java.util.stream.IntStream;
 import java.util.stream.Stream;
 import java.util.logging.Level;
-import java.util.Random;
+
 // import java.io.File;
 // import java.io.FileWriter;
 
 public class JHW2_2 {
     public static void main(String[] args) throws SecurityException, IOException {
-        Stream<Ineger> array = new Random().ints(6, 1, 100)
-        .boxed()
-        .collect(Collectors.toList());
+        int[] array = new int[6];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int)(Math.random()*100);
+            System.out.println(array[i]);
+        }
+
         int[] sortedArray = Bubble(array);
         for (int item : sortedArray) {
             System.out.printf("%d ", item);
@@ -35,7 +38,7 @@ public class JHW2_2 {
         int switchCount = 0;
         int compareCount = 0;
         long time = System.nanoTime();
-        
+
         for (maxPosition=array.length - 1; maxPosition >= 0;maxPosition--)	{
             for (currentPosition = 0; currentPosition < maxPosition; currentPosition++) {
                 compareCount++;
