@@ -5,12 +5,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.logging.FileHandler;
 import java.util.logging.SimpleFormatter;
-import java.util.stream.Stream;
 import java.util.logging.Level;
-
-// import java.io.File;
-// import java.io.FileWriter;
-
 public class JHW2_2 {
     public static void main(String[] args) throws SecurityException, IOException {
         int[] array = new int[6];
