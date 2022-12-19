@@ -9,8 +9,7 @@ public class JHW_2 {
             a[i] = 1;
         }
 
-        for (int i = 2; i <= Math.sqrt(n); i++)
-        {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (a[i] == 1)                  // проверяем, является ли `i` простым числом
             {
                 for (int j = 2; i * j <= n; j++) {
@@ -19,8 +18,7 @@ public class JHW_2 {
             }
         }
 
-        for (int i = 2; i <= n; i++)
-        {
+        for (int i = 2; i <= n; i++) {
             if (a[i] == 1) {
                 System.out.print(i + " ");
             }
