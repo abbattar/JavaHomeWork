@@ -4,7 +4,7 @@ package Home_Work_4;
 // import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class JHW4_2 {
   public static void main(String[] args) {
