@@ -34,17 +34,13 @@ public class JHW5_2 {
         }
       }
       for (int i = 0; i < ls.size(); i++) {
-        System.out.println(ls.get(i).split(" ")[0]);
-        // for (int j = 0; j < ls.size(); j++) {
-        //   if (i != j && !map.get(ls.get(i).split(" ")[0])
-        //                    .equals(map.get(ls.get(j).split(" ")[0]))) {
-        //     System.out.printf("Имя %s встречается %d раз\n",
-        //                       ls.get(i).split(" ")[0], rating[i]);
-        //   }
-        // }
-        // Я не понял, почему выдаёт ошибку: Cannot invoke "String.equals(Object)"
-        // because the return value of "java.util.Map.get(Object)" is null,
-        // хотя все имена печатает
+        for (int j = 0; j < ls.size(); j++) {
+          if (i != j && map.get(ls.get(i).split(" ")[0])
+                           != (map.get(ls.get(j).split(" ")[0]))) {
+            System.out.printf("Имя %s встречается %d раз\n",
+                              ls.get(i).split(" ")[0], rating[i]);
+          }
+        }
       }
 
     } catch (IOException e) {
