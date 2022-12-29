@@ -36,7 +36,7 @@ public class JHW5_2 {
       for (int i = 0; i < ls.size(); i++) {
         for (int j = 0; j < ls.size(); j++) {
           if (i != j && map.get(ls.get(i).split(" ")[0])
-                           != (map.get(ls.get(j).split(" ")[0]))) {
+                           != map.get(ls.get(j).split(" ")[0])) {
             System.out.printf("Имя %s встречается %d раз\n",
                               ls.get(i).split(" ")[0], rating[i]);
           }
