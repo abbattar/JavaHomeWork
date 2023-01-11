@@ -39,7 +39,6 @@ public class JHW5_2 {
       }
       Set<Entry<String, Integer>> entries = reversMap.entrySet();
       for (Entry<String, Integer> entry : entries) {
-
         System.out.println("Имя " + entry.getKey() + " встречается : " + entry.getValue() + " раз");
       }
 
