@@ -9,12 +9,14 @@ public class Notebook {
   String displayResolution;
   String operationSystem;
   int price;
+  int quantity;
+  String[] nb_color;
 
   @Override
   public String toString() {
     return String.format(
-        "serial_number:%s, mark:%s, ssd:%d, ram:%d, monitorTechnology:%s, displayResolution:%s, operationSystem:%s, price:%d",
-        serialNumber, mark, ssd, ram, monitorTechnology, price);
+        "serial_number:%s, mark:%s, ssd:%d, ram:%d, monitorTechnology:%s, displayResolution:%s, operationSystem:%s, price:%d, quantity:%d",
+        serialNumber, mark, ssd, ram, monitorTechnology, price, quantity);
   }
   @Override
   public int hashCode() {
